@@ -1,0 +1,65 @@
+// Place all the styles related to the dashboard controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+.border-form-div1 {
+  max-width: 1000px;
+  max-height: 1000px;
+  padding: 19px 29px 29px;
+  margin: 0 auto 20px;
+  background-color: #7CA3CC;
+  border: 1px solid #e5e5e5;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+     -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+          box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+
+container {
+width: 1300px; 
+height: 800px;
+background: #ffffff;
+}
+
+#header {
+background: #DDDDDD;
+height: 55px;
+}
+
+#leftBar {
+float: left; 
+width: 150px;
+height: 800px; 
+background: #EBEBEB; 
+}
+
+#content {
+float:left;
+width:600px;
+height: 800px;
+background-color: #cdcde6;
+}
+
+#rightBar { 
+float:right; 
+width: 550px; 
+height: 800px;
+background: #EBEBEB; 
+}
+
+#footer { 
+clear:both;
+background:#DDDDDD;
+} 
+
+.btn
+{
+padding:5px 25px; 
+background: #4479BA;
+}

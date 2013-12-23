@@ -1,0 +1,31 @@
+<%= render partial: "layouts/header"%>
+<html>
+<div class="container">
+<div class="span10 offset well">  
+<table class="table table-bordered">
+  <tr>
+    <th>Policy name</th>
+    <th>Policy scope</th>
+    <th>Policy objective</th>
+    <th>Policy reference</th>
+    <th>Action</th>
+    
+  </tr>
+
+<% @policies.each do |policy| %>
+  <tr>
+    <td><%= policy.Policy_name %></td>
+    <td><%= policy.Policy_scope %></td>
+    <td><%= policy.Policy_objective %></td>
+    <td><%= policy.Policy_reference %></td>
+    <td><%= link_to 'Show', policy %></td>
+    <td><%= link_to 'Edit', edit_policy_path(policy) %></td>
+    <td><%= link_to 'Destroy', policy, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+<a href = "policies/new" class="btn btn-primary btn-lg btn-block">Add New Policy</a>
+</div>
+</div>

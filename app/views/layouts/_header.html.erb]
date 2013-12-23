@@ -1,0 +1,20 @@
+<html>
+<head>
+</head>
+<body>
+  <div id="container">
+    <div class="header">
+     </div>
+ <div class="nav navbar">
+      <div class="navbar-inner">
+       
+          <ul class="nav">
+    <li><a href="/">DASHBOARD</a></li>
+    <li><a href="/policies">POLICIES</a></li>
+    </ul>
+  </div>
+</div>
+</div>
+  </div>
+</body>
+</html>

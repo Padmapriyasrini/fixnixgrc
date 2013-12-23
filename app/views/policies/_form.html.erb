@@ -1,0 +1,66 @@
+<%= render partial: "layouts/header"%>
+<html>
+<%= form_for(@policy) do |f| %>
+  <% if @policy.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@policy.errors.count, "error") %> prohibited this policy from being saved:</h2>
+
+      <ul>
+      <% @policy.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %> 
+<div class="container">
+<div class="span10 offset well">  
+  <div class="field">
+    <%= f.label :Policy_name %><br />
+    <%= f.text_field :Policy_name %>
+  </div>
+  <html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>jQuery UI Datepicker - Display month &amp; year menus</title>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<link rel="stylesheet" href="/resources/demos/style.css" />
+<script>
+$(function() {
+$( "#datepicker" ).datepicker({
+changeMonth: true,
+changeYear: true
+});
+});
+</script>
+</head>
+<body>
+<!-- <p>From: <input type="text" id="datepicker" /></p>
+<p>Valid upto: <input type="text" id="datepicker" /></p> -->
+</body>
+</html>
+  <div class="field">
+    <%= f.label :Policy_scope %><br />
+    <%= f.text_area :Policy_scope %>
+  </div>
+  <div class="field">
+    <%= f.label :Policy_objective %><br />
+    <%= f.text_area :Policy_objective %>
+  </div>
+  <div class="field">
+    <%= f.label :Policy_reference %><br />
+    <%= f.text_area :Policy_reference %>
+  </div>
+  <p>
+     <b> attachment </b><br/>
+     <%= f.file_field :attach %>
+   </p>
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+</div>
+</div>
+<% end %>
+    

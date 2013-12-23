@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Policy_name: MyString
+  Policy_scope: MyString
+  Policy_objective: MyString
+  Policy_reference: MyString
+
+two:
+  Policy_name: MyString
+  Policy_scope: MyString
+  Policy_objective: MyString
+  Policy_reference: MyString

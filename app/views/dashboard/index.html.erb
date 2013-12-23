@@ -1,0 +1,30 @@
+<html>
+<head>
+</head>
+<body>
+  <div id="container">
+
+    <div class="header">
+     </div>
+ <div class="nav navbar">
+      <div class="navbar-inner">
+       
+          <ul class="nav">
+    <li><a href="/dashboard">DASHBOARD</a></li>
+    <li><a href="/policies">POLICIES</a></li>
+    <li><a href="/ControlStandards">ControlStandards</a></li>
+    <li><a href="/Businessunits">BusinessUnits</a></li>
+    <li><a href="/Groups">Groups</a></li>
+    
+    </ul>
+  </div>
+</div>
+</div>
+  </div>
+</body>
+</html>
+<div class="span6 offset well"> 
+<%= javascript_include_tag "/js/highcharts.js", "chartkick" %> 
+<script type="text/javascript" src="/js/themes/skies.js"></script>
+<%= pie_chart Policy.group("Policy_name").count %>
+</div>

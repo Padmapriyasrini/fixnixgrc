@@ -1,0 +1,47 @@
+<%= render partial: "layouts/header"%>
+<html>
+<p id="notice"><%= notice %></p>
+<div class="container">
+<div class="span10 offset well">  
+<table class="table table-bordered">
+<tr>
+    <th>
+<p>
+  <b>Policy name:</b></br>
+  <%= @policy.Policy_name %>
+</p>
+</th>
+</tr>
+<tr>
+<th>
+<p>
+  <b>Policy scope:</b></br>
+  <%= @policy.Policy_scope %>
+</p>
+</th>
+</tr>
+<tr>
+<th>
+<p>
+  <b>Policy objective:</b></br>
+  <%= @policy.Policy_objective %>
+</p>
+</th>
+</tr>
+<tr>
+<th>
+<p>
+  <b>Policy reference:</b></br>
+  <%= @policy.Policy_reference %>
+</p>
+</tr>
+</th>
+</table>
+<a href="<%= @policy.attach.url %> ">
+            <b> File attached </b></a>
+
+<%= link_to 'Edit', edit_policy_path(@policy)%>|
+<%= link_to 'Back', policies_path %>
+<%= link_to "Show PDF", policy_path(@policy, format: "pdf")%>
+</div>
+</div>
